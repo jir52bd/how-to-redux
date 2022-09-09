@@ -1,7 +1,7 @@
 
  <p align="center">
     <h3 align="center">Understanding Reducer Function</h3>
-    <h4>``` (state, action) => newState ```</h4>
+    <h4 align="center"><span color="#a70000">(state, action) => newState </span></h4>
 </p>
 
 <br />
