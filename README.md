@@ -1,19 +1,55 @@
 
  <p align="center">
-    <h3 align="center">Understanding Reducer Function</h3>
+    <h3 align="center">কেন Reducers কে reducers বলা হয় ?</h3>
 </p>
 
-<br />
+Reduce অর্থ হলো ছোট করে নিয়ে আসা।  Reducer মূলত এসেছে JavaScript এর  ```reducer.array()``` function এর কনসেপ্ট টা কে কাজে লাগিয়েছে ।  Array reducer একটা বড় Array কে সিঙ্গেল ভ্যালুতে রিডিউস করে নিয়ে আসে। 
 
+```ruby
+let array = [1, 2, 3, 4, 5];
 
-``` Redux ``` এর ``` reducer() ``` ফাংশন হল সবচেয়ে গুরুত্বপূর্ণ এখানে আপনার  এপ্লিকেশনের  সব বিজনেস লজিক গুলো থাকে।  কিভাবে ``` state ``` পরিবর্তন করতে হবে সে বিষয়গুলো এবং লজিক গুলো এখানে আছে।
+console.log(
+    array.reduce((previousResult, currentValue) => {
+        return previousResult + currentValue;
+    }, 0)
+);
 
-``` Reducer ``` ফাংশন  প্যারামিটার হিসেবে কারেন্ট ``` state ``` এবং ``` action ``` টা নিবে এবং আউটপুট হিসেবে একটা নতুন ``` state ``` দিবে। অন্য ভাবে বলা যায় - 
-    ``` 
-       (state, action ) => newState 
-    ```
+//output: 15
 
-``` Reducer function ``` এর কিছু বৈশিষ্ট্য আছে - 
-1. ``` pure function ```
-2. ``` immutability ```
+```
+তেমনি, রিডাক্সের ```reducer function```, actions গুলোকে reduce করে ```updateState``` রিটার্ন করে।
 
+```ruby
+const actions = [
+    {type: "increment", payload: 1},
+    {type: "increment", payload: 1},
+    {type: "increment", payload: 1},
+    {type: "decrement", payload: 1},
+];
+
+const initialState = {
+    value: 0,
+};
+
+const counterReducer = (state, action) => {
+    if (action.type === "increment") {
+        return {
+            ...state,
+            value: state.value + action.payload,
+        };
+    } else if (action.type === "decrement") {
+        return {
+            ...state,
+            value: state.value - action.payload,
+        };
+    } else {
+        return state;
+    }
+}
+
+const finalResult = actions.reduce(counterReducer, initialState);
+
+console.log(finalResult);
+
+//output: { value: 2}  // 1+1+1-1 > 2
+```
