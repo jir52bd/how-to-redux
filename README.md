@@ -1,55 +1,18 @@
 
  <p align="center">
-    <h3 align="center">কেন Reducers কে reducers বলা হয় ?</h3>
+    <h3 align="center">Project: Multi-counter app</h3>
 </p>
 
-Reduce অর্থ হলো ছোট করে নিয়ে আসা।  Reducer মূলত এসেছে JavaScript এর  ```reducer.array()``` function এর কনসেপ্ট টা কে কাজে লাগিয়েছে ।  Array reducer একটা বড় Array কে সিঙ্গেল ভ্যালুতে রিডিউস করে নিয়ে আসে। 
+<h4>App এ যা কিছু থাকছে:</h4>
 
-```ruby
-let array = [1, 2, 3, 4, 5];
+১.১) Add counter বাটনে ক্লিক করলে নতুন Counter যোগ হবে।
 
-console.log(
-    array.reduce((previousResult, currentValue) => {
-        return previousResult + currentValue;
-    }, 0)
-);
+১.২) প্রতিটি counter আলাদা আলাদা State management করবে।
 
-//output: 15
+১.৩) প্রতিটি counter এর মধ্যে increment এবং decrement বাটন থাকবে।
 
-```
-তেমনি, রিডাক্সের ```reducer function```, actions গুলোকে reduce করে ```updateState``` রিটার্ন করে।
+১.৪) increment এবং decrement বাটন এর value ভ্যারিয়েবলি বাড়াতে হবে। (যেমন কখনো ১ বা কখনো ৫ এই ভাবে)
 
-```ruby
-const actions = [
-    {type: "increment", payload: 1},
-    {type: "increment", payload: 1},
-    {type: "increment", payload: 1},
-    {type: "decrement", payload: 1},
-];
+১.৫) Reset বাটন এ ক্লিক করলে সব counter রিসেট হয়ে যাবে।
 
-const initialState = {
-    value: 0,
-};
-
-const counterReducer = (state, action) => {
-    if (action.type === "increment") {
-        return {
-            ...state,
-            value: state.value + action.payload,
-        };
-    } else if (action.type === "decrement") {
-        return {
-            ...state,
-            value: state.value - action.payload,
-        };
-    } else {
-        return state;
-    }
-}
-
-const finalResult = actions.reduce(counterReducer, initialState);
-
-console.log(finalResult);
-
-//output: { value: 2}  // 1+1+1-1 > 2
-```
+১.৬) একদম প্রথম বারে initial state হিসেবে একটা counter থাকবে এবং তার initial value হবে 0
