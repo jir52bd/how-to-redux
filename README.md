@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">HOW To REDUX - MODULE 3 - LESSON 1</a></h3>
+    <h3 align="center"><a href="#">HOW TO REDUX - MODULE 3 - LESSON 1</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -11,13 +11,13 @@
 
 <!-- GET HTML TEMPLATE -->
 
-## ![htmlIcon][htmlicon-shield] Get HTML Template
+## Get HTML Template
 
 You can find the raw HTML template of the todo application from the "html_template" folder.
 
 <!-- HOW TO RUN -->
 
-## ![rocketIcon][rocketicon-shield] How to run
+## How to run
 
 Please follow the below instructions to run this branch in your machine:
 
