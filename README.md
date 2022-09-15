@@ -21,15 +21,15 @@ You can find the raw HTML template of the todo application from the "html_templa
 
 Please follow the below instructions to run this branch in your machine:
 
-1. Login to the GitHub account on which you have been granted access to this repository. If you have purchased the course but didn't get the access to this repository, please contact our support team. You will find contact details below.
+1. You will make a To-Do app using React & Redux. You will find contact details below.
 
 2. Clone this repository -
    ```sh
-   git clone https://github.com/Learn-with-Sumit/think-in-a-redux-way.git
+   git clone https://github.com/jir52bd/how-to-redux.git
    ```
 3. Go to the cloned project directory
    ```sh
-   cd think-in-a-redux-way
+   cd how-to-redux
    ```
 4. Checkout/switch to branch 3.1
    ```sh
