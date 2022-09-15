@@ -2,10 +2,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">HOW TO REDUX - MODULE 3 - LESSON 1</a></h3>
+    <h3 align="center"><a href="#">HOW TO REDUX - MODULE 3 - LESSON 3</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
+### Table of contents
+|Branch No:| Decsription         |
+|----------|---------------------|
+|3.1 | Setup react-redux project |
+|3.2 | Defining Actions          |
+|3.3 |Defining Reducer - todo slice|
+
 
 <br>
 
