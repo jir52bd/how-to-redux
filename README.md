@@ -14,6 +14,7 @@
 |3.3 | Defining Reducer - todo slice|
 |3.4 | Defining Reducer - filter slice|
 |3.5 | Store setup |
+|3.6 | Todo List and Todo |
 
 
 <br>
