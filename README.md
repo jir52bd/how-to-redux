@@ -13,6 +13,7 @@
 |3.2 | Defining Actions          |
 |3.3 | Defining Reducer - todo slice|
 |3.4 | Defining Reducer - filter slice|
+|3.5 | Store setup |
 
 
 <br>
