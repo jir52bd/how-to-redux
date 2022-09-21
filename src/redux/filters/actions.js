@@ -3,9 +3,7 @@ import { COLORCHANGED, STATUSCHANGED } from "./actionType"
 export const statuschanged = (status) => {
     return {
         type: STATUSCHANGED,
-        payload: {
-            status,
-        }
+        payload: status,
     };
 };
 

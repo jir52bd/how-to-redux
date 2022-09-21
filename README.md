@@ -11,7 +11,8 @@
 |----------|---------------------|
 |3.1 | Setup react-redux project |
 |3.2 | Defining Actions          |
-|3.3 |Defining Reducer - todo slice|
+|3.3 | Defining Reducer - todo slice|
+|3.4 | Defining Reducer - filter slice|
 
 
 <br>
