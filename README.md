@@ -15,6 +15,7 @@
 |3.4 | Defining Reducer - filter slice|
 |3.5 | Store setup |
 |3.6 | Todo List and Todo |
+}3.7 | Filter Section - Footer |
 
 
 <br>
