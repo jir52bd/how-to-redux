@@ -4,375 +4,449 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Todo | Redux Fundamental Example</title>
+        <link rel="shortcut icon" href="./assets/favicon.png" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
-            rel="stylesheet"
-        />
-
-        <script>
-            tailwind.config = {
-                theme: {
-                    fontFamily: {
-                        sans: ["Noto Sans HK", "sans-serif"],
-                    },
-                },
-            };
-        </script>
+        <title>Blog Home</title>
     </head>
     <body>
-        <div
-            class="grid place-items-center bg-blue-100 h-screen px-6 font-sans"
-        >
-            <!-- navbar -->
+        <!-- navigation -->
+        <nav class="bg-slate-100 shadow-md">
             <div
-                class="fixed top-0 left-0 text-center w-full header bg-violet-600 py-4 text-white font-bold text-lg shadow-lg"
+                class="max-w-7xl mx-auto px-5 lg:px-0 flex justify-between py-3 items-center"
             >
-                Simple Todo Application with Redux
+                <a href="index.html">
+                    <img
+                        class="h-10"
+                        src="./assets/lws.svg"
+                        alt="Learn with Sumit"
+                    />
+                </a>
             </div>
+        </nav>
 
-            <div class="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
-                <!-- header -->
-                <div>
-                    <form
-                        class="flex items-center bg-gray-100 px-4 py-4 rounded-md"
-                    >
-                        <img
-                            src="./images/notes.png"
-                            class="w-6 h-6"
-                            alt="Add todo"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Type your todo"
-                            class="w-full text-lg px-4 py-1 border-none outline-none bg-gray-100 text-gray-500"
-                        />
-                        <button
-                            type="submit"
-                            class="appearance-none w-8 h-8 bg-[url('./images/plus.png')] bg-no-repeat bg-contain"
-                        ></button>
-                    </form>
-
-                    <ul class="flex justify-between my-4 text-xs text-gray-500">
-                        <li class="flex space-x-1 cursor-pointer">
-                            <img
-                                class="w-4 h-4"
-                                src="./images/double-tick.png"
-                                alt="Complete"
-                            />
-                            <span>Complete All Tasks</span>
-                        </li>
-                        <li class="cursor-pointer">Clear completed</li>
-                    </ul>
-                </div>
-                <hr class="mt-4" />
-
-                <!-- todo list -->
-                <div
-                    class="mt-2 text-gray-700 text-sm max-h-[300px] overflow-y-auto"
-                >
-                    <!-- todo -->
-                    <div
-                        class="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0"
-                    >
-                        <div
-                            class="rounded-full bg-white border-2 border-gray-400 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-2 border-green-500 focus-within:border-green-500"
-                        >
-                            <input
-                                type="checkbox"
-                                class="opacity-0 absolute rounded-full"
-                            />
-                            <svg
-                                class="hidden fill-current w-3 h-3 text-green-500 pointer-events-none"
-                                viewBox="0 0 20 20"
-                            >
-                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-                            </svg>
-                        </div>
-
-                        <div class="select-none flex-1 line-through">
-                            Learn React from Learn with Sumit YouTube Channel
-                        </div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-green-500 hover:bg-green-500 bg-green-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-yellow-500 hover:bg-yellow-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-red-500 hover:bg-red-500"
-                        ></div>
-
-                        <img
-                            src="./images/cancel.png"
-                            class="flex-shrink-0 w-4 h-4 ml-2 cursor-pointer"
-                            alt="Cancel"
-                        />
-                    </div>
-
-                    <!-- todo -->
-                    <div
-                        class="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0"
-                    >
-                        <div
-                            class="rounded-full bg-white border-2 border-gray-400 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-2 border-green-500 focus-within:border-green-500"
-                        >
-                            <input
-                                type="checkbox"
-                                class="opacity-0 absolute rounded-full"
-                            />
-                            <svg
-                                class="hidden fill-current w-3 h-3 text-green-500 pointer-events-none"
-                                viewBox="0 0 20 20"
-                            >
-                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-                            </svg>
-                        </div>
-
-                        <div class="select-none flex-1">
-                            Learn Redux from Think in a Redux way course
-                        </div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-green-500 hover:bg-green-500 bg-green-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-yellow-500 hover:bg-yellow-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-red-500 hover:bg-red-500"
-                        ></div>
-
-                        <img
-                            src="./images/cancel.png"
-                            class="flex-shrink-0 w-4 h-4 ml-2 cursor-pointer"
-                            alt="Cancel"
-                        />
-                    </div>
-                </div>
-
-                <hr class="mt-4" />
-
-                <!-- footer -->
-                <div class="mt-4 flex justify-between text-xs text-gray-500">
-                    <p>2 tasks left</p>
-                    <ul class="flex space-x-1 items-center text-xs">
-                        <li class="cursor-pointer font-bold">All</li>
-                        <li>|</li>
-                        <li class="cursor-pointer">Incomplete</li>
-                        <li>|</li>
-                        <li class="cursor-pointer">Complete</li>
-                        <li></li>
-                        <li></li>
-                        <li
-                            class="h-3 w-3 border-2 border-green-500 md:hover:bg-green-500 rounded-full cursor-pointer bg-green-500"
-                        ></li>
-                        <li
-                            class="h-3 w-3 border-2 border-red-500 md:hover:bg-red-500 rounded-full cursor-pointer"
-                        ></li>
-                        <li
-                            class="h-3 w-3 border-2 border-yellow-500 md:hover:bg-yellow-500 rounded-full cursor-pointer"
-                        ></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Todo | Redux Fundamental Example</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
-            rel="stylesheet"
-        />
-
-        <script>
-            tailwind.config = {
-                theme: {
-                    fontFamily: {
-                        sans: ["Noto Sans HK", "sans-serif"],
-                    },
-                },
-            };
-        </script>
-    </head>
-    <body>
+        <!-- search -->
         <div
-            class="grid place-items-center bg-blue-100 h-screen px-6 font-sans"
+            class="border mt-6 border-slate-200 flex items-center w-11/12 lg:w-1/2 mx-auto bg-gray-50 h-12 px-5 rounded-lg text-sm ring-emerald-200"
         >
-            <!-- navbar -->
-            <div
-                class="fixed top-0 left-0 text-center w-full header bg-violet-600 py-4 text-white font-bold text-lg shadow-lg"
-            >
-                Simple Todo Application with Redux
-            </div>
-
-            <div class="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
-                <!-- header -->
-                <div>
-                    <form
-                        class="flex items-center bg-gray-100 px-4 py-4 rounded-md"
-                    >
-                        <img
-                            src="./images/notes.png"
-                            class="w-6 h-6"
-                            alt="Add todo"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Type your todo"
-                            class="w-full text-lg px-4 py-1 border-none outline-none bg-gray-100 text-gray-500"
-                        />
-                        <button
-                            type="submit"
-                            class="appearance-none w-8 h-8 bg-[url('./images/plus.png')] bg-no-repeat bg-contain"
-                        ></button>
-                    </form>
-
-                    <ul class="flex justify-between my-4 text-xs text-gray-500">
-                        <li class="flex space-x-1 cursor-pointer">
-                            <img
-                                class="w-4 h-4"
-                                src="./images/double-tick.png"
-                                alt="Complete"
-                            />
-                            <span>Complete All Tasks</span>
-                        </li>
-                        <li class="cursor-pointer">Clear completed</li>
-                    </ul>
-                </div>
-                <hr class="mt-4" />
-
-                <!-- todo list -->
-                <div
-                    class="mt-2 text-gray-700 text-sm max-h-[300px] overflow-y-auto"
-                >
-                    <!-- todo -->
-                    <div
-                        class="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0"
-                    >
-                        <div
-                            class="rounded-full bg-white border-2 border-gray-400 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-2 border-green-500 focus-within:border-green-500"
-                        >
-                            <input
-                                type="checkbox"
-                                class="opacity-0 absolute rounded-full"
-                            />
-                            <svg
-                                class="hidden fill-current w-3 h-3 text-green-500 pointer-events-none"
-                                viewBox="0 0 20 20"
-                            >
-                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-                            </svg>
-                        </div>
-
-                        <div class="select-none flex-1 line-through">
-                            Learn React from Learn with Sumit YouTube Channel
-                        </div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-green-500 hover:bg-green-500 bg-green-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-yellow-500 hover:bg-yellow-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-red-500 hover:bg-red-500"
-                        ></div>
-
-                        <img
-                            src="./images/cancel.png"
-                            class="flex-shrink-0 w-4 h-4 ml-2 cursor-pointer"
-                            alt="Cancel"
-                        />
-                    </div>
-
-                    <!-- todo -->
-                    <div
-                        class="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0"
-                    >
-                        <div
-                            class="rounded-full bg-white border-2 border-gray-400 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-2 border-green-500 focus-within:border-green-500"
-                        >
-                            <input
-                                type="checkbox"
-                                class="opacity-0 absolute rounded-full"
-                            />
-                            <svg
-                                class="hidden fill-current w-3 h-3 text-green-500 pointer-events-none"
-                                viewBox="0 0 20 20"
-                            >
-                                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
-                            </svg>
-                        </div>
-
-                        <div class="select-none flex-1">
-                            Learn Redux from Think in a Redux way course
-                        </div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-green-500 hover:bg-green-500 bg-green-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-yellow-500 hover:bg-yellow-500"
-                        ></div>
-
-                        <div
-                            class="flex-shrink-0 h-4 w-4 rounded-full border-2 ml-auto cursor-pointer border-red-500 hover:bg-red-500"
-                        ></div>
-
-                        <img
-                            src="./images/cancel.png"
-                            class="flex-shrink-0 w-4 h-4 ml-2 cursor-pointer"
-                            alt="Cancel"
-                        />
-                    </div>
-                </div>
-
-                <hr class="mt-4" />
-
-                <!-- footer -->
-                <div class="mt-4 flex justify-between text-xs text-gray-500">
-                    <p>2 tasks left</p>
-                    <ul class="flex space-x-1 items-center text-xs">
-                        <li class="cursor-pointer font-bold">All</li>
-                        <li>|</li>
-                        <li class="cursor-pointer">Incomplete</li>
-                        <li>|</li>
-                        <li class="cursor-pointer">Complete</li>
-                        <li></li>
-                        <li></li>
-                        <li
-                            class="h-3 w-3 border-2 border-green-500 md:hover:bg-green-500 rounded-full cursor-pointer bg-green-500"
-                        ></li>
-                        <li
-                            class="h-3 w-3 border-2 border-red-500 md:hover:bg-red-500 rounded-full cursor-pointer"
-                        ></li>
-                        <li
-                            class="h-3 w-3 border-2 border-yellow-500 md:hover:bg-yellow-500 rounded-full cursor-pointer"
-                        ></li>
-                    </ul>
-                </div>
-            </div>
+            <input
+                class="outline-none border-none bg-gray-50 h-full w-full mr-2"
+                type="search"
+                name="search"
+                placeholder="Search"
+            />
+            <img
+                class="inline h-6 cursor-pointer"
+                src="./assets/search.svg"
+                alt="Search"
+            />
         </div>
+
+        <section
+            class="relative bg-gray-50 pt-8 pb-20 px-4 sm:px-6 lg:pt-16 lg:pb-16 lg:px-8"
+        >
+            <div class="absolute inset-0">
+                <div class="bg-white h-1/3 sm:h-2/3"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h2
+                        class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl"
+                    >
+                        ALL BLOGS ARE HERE
+                    </h2>
+                    <p
+                        class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4"
+                    >
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ipsa libero labore natus atque, ducimus sed.
+                    </p>
+                </div>
+
+                <!-- card grid  -->
+                <div
+                    class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+                >
+                    <!-- single card  -->
+                    <div
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    >
+                        <div class="flex-shrink-0">
+                            <img
+                                class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="flex-1 bg-white p-6 flex flex-col justify-between"
+                        >
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <span
+                                        class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                                    >
+                                        Article
+                                    </span>
+                                </p>
+                                <a href="#" class="block mt-1">
+                                    <p
+                                        class="text-xl font-semibold text-gray-900"
+                                    >
+                                        Boost your conversion rate
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img
+                                        class="h-10 w-10 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ml-3">
+                                    <p
+                                        class="text-sm font-medium text-gray-900 hover:underline"
+                                    >
+                                        Learn with sumit
+                                    </p>
+                                    <div
+                                        class="flex space-x-1 text-sm text-gray-500"
+                                    >
+                                        <time datetime="2020-03-16"
+                                            >11 Jul, 2022
+                                        </time>
+                                        <span aria-hidden="true">
+                                            &middot;
+                                        </span>
+                                        <span> 6 min read </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single card  -->
+                    <div
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    >
+                        <div class="flex-shrink-0">
+                            <img
+                                class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="flex-1 bg-white p-6 flex flex-col justify-between"
+                        >
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <span
+                                        class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                                    >
+                                        Article
+                                    </span>
+                                </p>
+                                <a href="#" class="block mt-1">
+                                    <p
+                                        class="text-xl font-semibold text-gray-900"
+                                    >
+                                        How to use search engine optimization to
+                                        drive sales
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img
+                                        class="h-10 w-10 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ml-3">
+                                    <p
+                                        class="text-sm font-medium text-gray-900 hover:underline"
+                                    >
+                                        Learn with sumit
+                                    </p>
+                                    <div
+                                        class="flex space-x-1 text-sm text-gray-500"
+                                    >
+                                        <time datetime="2020-03-16">
+                                            08 Feb, 2022
+                                        </time>
+                                        <span aria-hidden="true">
+                                            &middot;
+                                        </span>
+                                        <span> 11 min read </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single card  -->
+                    <div
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    >
+                        <div class="flex-shrink-0">
+                            <img
+                                class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="flex-1 bg-white p-6 flex flex-col justify-between"
+                        >
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <span
+                                        class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                                    >
+                                        Article
+                                    </span>
+                                </p>
+                                <a href="#" class="block mt-1">
+                                    <p
+                                        class="text-xl font-semibold text-gray-900"
+                                    >
+                                        Improve your customer experience
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img
+                                        class="h-10 w-10 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ml-3">
+                                    <p
+                                        class="text-sm font-medium text-gray-900 hover:underline"
+                                    >
+                                        Learn with sumit
+                                    </p>
+                                    <div
+                                        class="flex space-x-1 text-sm text-gray-500"
+                                    >
+                                        <time datetime="2020-03-16"
+                                            >20 Mar, 2022
+                                        </time>
+                                        <span aria-hidden="true">
+                                            &middot;
+                                        </span>
+                                        <span> 9 min read </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single card  -->
+                    <div
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    >
+                        <div class="flex-shrink-0">
+                            <img
+                                class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="flex-1 bg-white p-6 flex flex-col justify-between"
+                        >
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <span
+                                        class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                                    >
+                                        Article
+                                    </span>
+                                </p>
+                                <a href="#" class="block mt-1">
+                                    <p
+                                        class="text-xl font-semibold text-gray-900"
+                                    >
+                                        Boost your conversion rate
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img
+                                        class="h-10 w-10 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ml-3">
+                                    <p
+                                        class="text-sm font-medium text-gray-900 hover:underline"
+                                    >
+                                        Learn with sumit
+                                    </p>
+                                    <div
+                                        class="flex space-x-1 text-sm text-gray-500"
+                                    >
+                                        <time datetime="2020-03-16"
+                                            >11 Jul, 2022
+                                        </time>
+                                        <span aria-hidden="true">
+                                            &middot;
+                                        </span>
+                                        <span> 6 min read </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single card  -->
+                    <div
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    >
+                        <div class="flex-shrink-0">
+                            <img
+                                class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="flex-1 bg-white p-6 flex flex-col justify-between"
+                        >
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <span
+                                        class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                                    >
+                                        Article
+                                    </span>
+                                </p>
+                                <a href="#" class="block mt-1">
+                                    <p
+                                        class="text-xl font-semibold text-gray-900"
+                                    >
+                                        How to use search engine optimization to
+                                        drive sales
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img
+                                        class="h-10 w-10 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ml-3">
+                                    <p
+                                        class="text-sm font-medium text-gray-900 hover:underline"
+                                    >
+                                        Learn with sumit
+                                    </p>
+                                    <div
+                                        class="flex space-x-1 text-sm text-gray-500"
+                                    >
+                                        <time datetime="2020-03-16">
+                                            08 Feb, 2022
+                                        </time>
+                                        <span aria-hidden="true">
+                                            &middot;
+                                        </span>
+                                        <span> 11 min read </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single card  -->
+                    <div
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                    >
+                        <div class="flex-shrink-0">
+                            <img
+                                class="h-48 w-full object-cover"
+                                src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="flex-1 bg-white p-6 flex flex-col justify-between"
+                        >
+                            <div class="flex-1">
+                                <p class="text-sm font-medium text-indigo-600">
+                                    <span
+                                        class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
+                                    >
+                                        Article
+                                    </span>
+                                </p>
+                                <a href="#" class="block mt-1">
+                                    <p
+                                        class="text-xl font-semibold text-gray-900"
+                                    >
+                                        Improve your customer experience
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img
+                                        class="h-10 w-10 rounded-full"
+                                        src="https://avatars.githubusercontent.com/u/73503432?v=4"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="ml-3">
+                                    <p
+                                        class="text-sm font-medium text-gray-900 hover:underline"
+                                    >
+                                        Learn with sumit
+                                    </p>
+                                    <div
+                                        class="flex space-x-1 text-sm text-gray-500"
+                                    >
+                                        <time datetime="2020-03-16"
+                                            >20 Mar, 2022
+                                        </time>
+                                        <span aria-hidden="true">
+                                            &middot;
+                                        </span>
+                                        <span> 9 min read </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="pt-6">
+            <div
+                class="max-w-7xl mx-auto px-5 py-6 lg:px-0 flex justify-between gap-2 border-t text-sm text-slate-400"
+            >
+                <div>Copyright 2022 Learn with Sumit.</div>
+                <div>
+                    <a
+                        href="https://youtube.com/learnwithsumit"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        YouTube Channel
+                    </a>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
