@@ -17,6 +17,7 @@
 |3.6 | Todo List and Todo |
 |3.7 | Filter Section - Footer |
 |3.8 | Filtering Todo List |
+|3.9 | Adding Todo |
 
 
 <br>
