@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">Module-4: Proect-Advanced Todo Application Async Logic and Date Fetching(Redux Thunk)</a></h3>
+    <h3 align="center"><a href="#">Module-4: Project-Advanced Todo Application Async Logic and Date Fetching(Redux Thunk)</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -13,11 +13,11 @@
 |4.2 | Understanding thunk function  |
 |4.3 | Redux async Date Flow|
 |4.4 | Introduction to redux thunk|
-|4.5 | Proect: Todo Appliction-part 1|
-|4.6 | Proect: Todo Appliction-part 2|
-|4.7 | Proect: Todo Appliction-part 3|
-|4.8 | Proect: Todo Appliction-part 4|
-|4.9 | Proect: Add fatures Todo Application|
+|4.5 | Project: Todo Appliction-part 1|
+|4.6 | Project: Todo Appliction-part 2|
+|4.7 | Project: Todo Appliction-part 3|
+|4.8 | Project: Todo Appliction-part 4|
+|4.9 | Project: Add fatures Todo Application|
 
 
 <br>
