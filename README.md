@@ -9,7 +9,7 @@
 ### Table of contents
 |Branch No:| Decsription         |
 |----------|---------------------|
-|4.5 | Add JSON server uning thunk |
+|4.5 | Add JSON server using thunk |
 |4.6 | Showing data from server|
 |4.7 | Update colors|
 |4.8 | Delete todos|
