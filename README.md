@@ -44,9 +44,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd how-to-redux
    ```
-4. Checkout/switch to branch 3.1
+4. Checkout/switch to branch 4.1
    ```sh
-   git checkout 3.1
+   git checkout 4.1
    ```
 5. Install dependencies
    ```sh
