@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 
 const fetchTodos = async (dispatch, getState) => {
     const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos?_limit=5"
+        "https://jsonplaceholder.typicode.com/todos?_limit=2"
     );
 
     const todos = await response.json();
