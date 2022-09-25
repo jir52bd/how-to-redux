@@ -2,23 +2,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">HOW TO REDUX - MODULE 3 - LESSON 3</a></h3>
+    <h3 align="center"><a href="#">Lesson 4.5: Project - Todo Application </a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
 ### Table of contents
 |Branch No:| Decsription         |
 |----------|---------------------|
-|3.1 | Setup react-redux project |
-|3.2 | Defining Actions          |
-|3.3 | Defining Reducer - todo slice|
-|3.4 | Defining Reducer - filter slice|
-|3.5 | Store setup |
-|3.6 | Todo List and Todo |
-|3.7 | Filter Section - Footer |
-|3.8 | Filtering Todo List |
-|3.9 | Adding Todo |
-
+|4.5 | Add JSON server uning thunk |
+|4.6 | Showing data from server|
+|4.7 | Update colors|
+|4.8 | Delete todos|
 
 <br>
 
@@ -44,9 +38,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd how-to-redux
    ```
-4. Checkout/switch to branch 3.9
+4. Checkout/switch to branch 4.5
    ```sh
-   git checkout 3.9
+   git checkout 4.5
    ```
 5. Install dependencies
    ```sh
