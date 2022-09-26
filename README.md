@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">Lesson 4.6: Project - Todo Application </a></h3>
+    <h3 align="center"><a href="#">Lesson 4.7: Project - Todo Application </a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -11,7 +11,7 @@
 |----------|---------------------|
 |4.5 | Add JSON server using thunk |
 |4.6 | Input and add data in server|
-|4.7 | Update colors|
+|4.7 | Update status, colors|
 |4.8 | Delete todos|
 
 <br>
@@ -38,9 +38,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd how-to-redux
    ```
-4. Checkout/switch to branch 4.6
+4. Checkout/switch to branch 4.7
    ```sh
-   git checkout 4.6
+   git checkout 4.7
    ```
 5. Install dependencies
    ```sh

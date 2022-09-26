@@ -9,20 +9,20 @@
     {
       "id": 2,
       "text": "Learn Modern ES6+ JavaScript",
-      "completed": true,
-      "color": "red"
+      "completed": false,
+      "color": "green"
     },
     {
       "id": 3,
       "text": "Learn React JS",
       "completed": true,
-      "color": "yellow"
+      "color": "green"
     },
     {
       "text": "Learn Redux Basics",
       "completed": true,
       "id": 4,
-      "color": "red"
+      "color": "yellow"
     },
     {
       "text": "Learn Redux fundamentals",
@@ -47,12 +47,12 @@
     },
     {
       "text": "hdjhdjhdjsdh",
-      "completed": false,
+      "completed": true,
       "id": 9
     },
     {
       "text": "Japanese",
-      "completed": false,
+      "completed": true,
       "id": 10
     }
   ]
