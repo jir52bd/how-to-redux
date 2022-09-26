@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">Lesson 4.7: Project - Todo Application </a></h3>
+    <h3 align="center"><a href="#">Lesson 4.8: Project - Todo Application </a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -38,9 +38,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd how-to-redux
    ```
-4. Checkout/switch to branch 4.7
+4. Checkout/switch to branch 4.8
    ```sh
-   git checkout 4.7
+   git checkout 4.8
    ```
 5. Install dependencies
    ```sh
