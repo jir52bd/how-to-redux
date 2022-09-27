@@ -13,6 +13,7 @@
 |4.6 | Input and add data in server|
 |4.7 | Update status, colors|
 |4.8 | Delete todos|
+|4.9 | Edit todo |
 
 <br>
 
@@ -38,9 +39,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd how-to-redux
    ```
-4. Checkout/switch to branch 4.8
+4. Checkout/switch to branch 4.9
    ```sh
-   git checkout 4.8
+   git checkout 4.9
    ```
 5. Install dependencies
    ```sh
