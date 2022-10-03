@@ -2,18 +2,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h3 align="center"><a href="#">Lesson 4.8: Project - Todo Application </a></h3>
+    <h3 align="center"><a href="#">Lesson 5.1: Introduction to redux toolkit</a></h3>
 </p>
 
 <!-- TABLE OF CONTENTS -->
 ### Table of contents
 |Branch No:| Decsription         |
 |----------|---------------------|
-|4.5 | Add JSON server using thunk |
-|4.6 | Input and add data in server|
-|4.7 | Update status, colors|
-|4.8 | Delete todos|
-|4.9 | Edit todo |
+|5.1 | Why Redux Toolkit |
+|5.2 | Creating Slice|
+|5.3 | Configuring redux store & Dispatch|
+|5.4 | Introduction to immer - immutable state update|
+|5.5 | Add new feature - Dynamic Count|
+|5.6 | Middleware concert - redux logger|
+|5.7 | Extra Reducer |
+|5.8 | Async thunk part - 1|
+|5.9 | Async thunk part - 2 |
+|5.10| Play with JSON placeholder|
 
 <br>
 
@@ -39,9 +44,9 @@ Please follow the below instructions to run this branch in your machine:
    ```sh
    cd how-to-redux
    ```
-4. Checkout/switch to branch 4.9
+4. Checkout/switch to branch 5.1
    ```sh
-   git checkout 4.9
+   git checkout 5.1
    ```
 5. Install dependencies
    ```sh
