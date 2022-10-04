@@ -343,6 +343,55 @@
   <tr>
     <td>9.13) chat head Feature</td>
   </tr>
+  <tr>
+    <th rowspan="14">Module 10</th>
+    <th>Advaced Project - Chat Application (Part - 2)</th>
+  </tr>
+  <tr>
+    <td>10.1) Required API Creation Part - 1 <a href="#">Live Demo</a> </td>
+  </tr>
+  <tr>
+    <td>10.2) Sending Message Inside Modal Part - 2</td>
+  </tr>
+  <tr>
+    <td>10.3) Sending Message Inside Modal Part - 3</td>
+  </tr>
+  <tr>
+    <td>10.4) Sending Message Inside Modal Part - 4</td>
+  </tr>
+  <tr>
+    <td>10.5) Sending Message Inside Modal Part - 5</td>
+  </tr>
+  <tr>
+    <td>10.6) Sending Message Inside Modal Part - 6</td>
+  </tr>
+  <tr>
+    <td>10.7) Sending Message inside conversation</td>
+  </tr>
+  <tr>
+    <td>10.8) Optimistic cache Update</td>
+  </tr>
+  <tr>
+   <td>10.9) Pessimistic Cache Update</td>
+  </tr>
+  <tr>
+   <td>10.10) Websocket Implementation</td>
+  </tr>
+  <tr>
+    <td>10.11) Emiting Events From server</td>
+  </tr>
+  <tr>
+    <td>10.12) Client side socket Implementation</td>
+  </tr>
+  <tr>
+    <td>10.13) Infinity Scroll</td>
+  </tr>
+  <tr>
+    <td>10.14) Base Query customization</td>
+  </tr>
+  <tr>
+    <td>10.15) Update feature in existing poject</td>
+  </tr>
 </table>
 
 
