@@ -1,10 +1,51 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+## Table of Index
+<table>
+  <tr>
+    <th>Module</th>
+    <th>Redux Fundamentals</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Module 1</th>
+    <td>1.1) What is state Management</td>
+  </tr>
+  <tr>
+    <td>1.2) Reactive UI and Reusability </td>
+  </tr>
+  <tr>
+    <td>1.3) Rect state Management </td>
+  </tr>
+  <tr>
+    <td>1.4) Introduction to Redux </td>
+  </tr>
+  <tr>
+    <td>1.5) How Redux store works </td>
+  </tr>
+  <tr>
+    <td>1.6) Rewrite the counter Application </td>
+  </tr>
+  <tr>
+    <td>1.7) Action Playloads & Creators   </td>
+  </tr>
+  <tr>
+    <td>1.8) Understanding Reducers </td>
+  </tr>
+  <tr>
+    <td>1.9) Immutability concept </td>
+  </tr>
+  <tr>
+    <td>1.10) Why Reducers and called reucers </td>
+  </tr>
+  <tr>
+    <td>1.11) Redux Data flow </td>
+  </tr>
+  <tr>
+    <td>1.12) Presductable state Container </td>
+  </tr>
+  <tr>
+    <td>1.13) <b>Project - </b> <a>Multicounter application</a></td>
+  </tr>
+</table>
 
 ### `npm start`
 
