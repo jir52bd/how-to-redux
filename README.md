@@ -188,7 +188,7 @@
     <th>Project - Video website with Redux Toolkit</th>
   </tr>
   <tr>
-    <td>6.1) React-redux Tooltkit Project setup <a>Live Demo</a></td>
+    <td>6.1) React-redux Tooltkit Project setup <a href="#">Live Demo</a></td>
   </tr>
   <tr>
     <td>6.2) Setup backend JSON server API </td>
@@ -225,6 +225,83 @@
   </tr>
   <tr>
     <td>6.13) <b>Project - </b> <a href="#">Video Course website application</a></td>
+  </tr>
+  <tr>
+    <th rowspan="14">Module 6</th>
+    <th>Project - Video website with Redux Toolkit</th>
+  </tr>
+  <tr>
+    <td>6.1) React-redux Tooltkit Project setup <a href="#">Live Demo</a></td>
+  </tr>
+  <tr>
+    <td>6.2) Setup backend JSON server API </td>
+  </tr>
+  <tr>
+    <td>6.3) Setup REact User Interface </td>
+  </tr>
+  <tr>
+    <td>6.4) Setup Routing react - router dom </td>
+  </tr>
+  <tr>
+    <td>6.5) Videos Feature - 1</td>
+  </tr>
+  <tr>
+    <td>6.6) Videos Feature - 2</td>
+  </tr>
+  <tr>
+    <td>6.7) Tag Feature - 1</td>
+  </tr>
+  <tr>
+    <td>6.8) Tag Feature - 2 </td>
+  </tr>
+  <tr>
+    <td>6.9) Video Feature  </td>
+  </tr>
+  <tr>
+    <td>6.10) Related video Feature  </td>
+  </tr>
+  <tr>
+    <td>6.11) Filters and search Feature </td>
+  </tr>
+  <tr>
+    <td>6.12) Filters and search Feature </td>
+  </tr>
+  <tr>
+    <td>6.13) <b>Project - </b> <a href="#">Video Course website application</a></td>
+  </tr>
+  <tr>
+    <th rowspan="11">Module 7</th>
+    <th>Project - Advaced Expense Tracker CRUD Application with Redux toolkit</th>
+  </tr>
+  <tr>
+    <td>7.1) Introduction and Project setup <a href="#">Live Demo</a></td>
+  </tr>
+  <tr>
+    <td>7.2) React User Interface </td>
+  </tr>
+  <tr>
+    <td>7.3) Create APIs </td>
+  </tr>
+  <tr>
+    <td>7.4) Thunks ans slices </td>
+  </tr>
+  <tr>
+    <td>7.5) Add Transaction</td>
+  </tr>
+  <tr>
+    <td>7.6) List Transaction</td>
+  </tr>
+  <tr>
+    <td>7.7) Edit Transaction</td>
+  </tr>
+  <tr>
+    <td>7.8) Delete Transaction</td>
+  </tr>
+  <tr>
+    <td>7.9) Balance Calculation</td>
+  </tr>
+  <tr>
+    <td>7.10) <b>Project - </b> <a href="#">Invoice application</a></td>
   </tr>
 </table>
 
