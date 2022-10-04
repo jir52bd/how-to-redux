@@ -86,11 +86,10 @@
     <td>2.12) <b>Project - </b> <a href="#">Create Shopping Cart application</a></td>
   </tr>
   <tr>
-    <th></th>
-    <th>Proect - sample todo Application In react-redux</th>
+    <th rowspan="10">Module 3</th>
+    <th>Project - sample todo Application In react-redux</th>
   </tr>
   <tr>
-    <th rowspan="12">Module 3</th>
     <td>3.1) Setup react-redux <a href="#">Live project</a></td>
   </tr>
   <tr>
@@ -119,6 +118,37 @@
   </tr>
   <tr>
     <td>3.10) <b>Project - </b> <a href="#">Create Blog webpage application</a></td>
+  </tr>
+  <tr>
+    <th rowspan="10">Module 4</th>
+    <th>Project - Advaced todo Application - Async Logic & Data Fetching (Redux Thunk)</th>
+  </tr>
+  <tr>
+    <td>4.1) Introduction to Asynchronous Action</td>
+  </tr>
+  <tr>
+    <td>4.2) Understanding Thunk function </td>
+  </tr>
+  <tr>
+    <td>4.3) Redux async Data flow </td>
+  </tr>
+  <tr>
+    <td>4.4) Introduction to redux - thunk </td>
+  </tr>
+  <tr>
+    <td>4.5) Todo Application Part - 1 <a href="#">Live Demo</a> </td>
+  </tr>
+  <tr>
+    <td>4.6) Todo Appliction Part - 2</td>
+  </tr>
+  <tr>
+    <td>4.7) Todo Application Part - 3   </td>
+  </tr>
+  <tr>
+    <td>4.8) Todo Application Part - 4 </td>
+  </tr>
+  <tr>
+    <td>4.9) <b>Project - </b> <a href="#">Add fatures to Todo application</a></td>
   </tr>
 </table>
 
