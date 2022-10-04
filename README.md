@@ -89,7 +89,7 @@
     <th>Project - sample todo Application In react-redux</th>
   </tr>
   <tr>
-    <td>3.1) Setup react-redux <a href="#">Live project</a></td>
+    <td><a href="https://github.com/jir52bd/how-to-redux/tree/3.1">3.1</a>) Setup react-redux <a href="#">Live project</a></td>
   </tr>
   <tr>
     <td>3.2) Defining Actions </td>
