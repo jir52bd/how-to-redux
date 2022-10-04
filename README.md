@@ -6,7 +6,7 @@
     <th>Redux Fundamentals</th>
   </tr>
   <tr>
-    <th rowspan="12">Module 1</th>
+    <th rowspan="13">Module 1</th>
     <td>1.1) What is state Management</td>
   </tr>
   <tr>
@@ -43,7 +43,7 @@
     <td>1.12) Presductable state Container </td>
   </tr>
   <tr>
-    <td>1.13) <b>Project - </b> <a>Multicounter application</a></td>
+    <td>1.13) <b>Project - </b> <a href="#">Multicounter application</a></td>
   </tr>
 </table>
 
