@@ -116,7 +116,7 @@
     <td>3.9) Adding Todo </td>
   </tr>
   <tr>
-    <td>3.10) <b>Project - </b> <a href="#">Create Blog webpage application</a></td>
+    <td>3.10) <b>Project - </b> <a href="https://gleeful-gelato-2361f2.netlify.app/">Create Blog webpage application</a></td>
   </tr>
   <tr>
     <th rowspan="10">Module 4</th>
