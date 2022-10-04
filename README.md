@@ -392,6 +392,40 @@
   <tr>
     <td>10.15) Update feature in existing poject</td>
   </tr>
+  <tr>
+    <th rowspan="11">Module 11</th>
+    <th>Selectors, reselect & Redux vs context</th>
+  </tr>
+  <tr>
+    <td>11.1) How useSelector works</td>
+  </tr>
+  <tr>
+    <td>11.2) How re-rendering happens</td>
+  </tr>
+  <tr>
+    <td>11.3) Shellow equality check</td>
+  </tr>
+  <tr>
+    <td>11.4) Encapsulating selectors</td>
+  </tr>
+  <tr>
+    <td>11.5) Memoize Selectors</td>
+  </tr>
+  <tr>
+    <td>11.6) Selector parameters</td>
+  </tr>
+  <tr>
+    <td>11.7) Selector Factories</td>
+  </tr>
+  <tr>
+    <td>11.8) Balance Selector Usege</td>
+  </tr>
+  <tr>
+   <td>11.9) Redux vs Context API (project with context)</td>
+  </tr>
+  <tr>
+   <td>11.10) Redux vs Contex API</td>
+  </tr>
 </table>
 
 
