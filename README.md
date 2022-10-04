@@ -6,7 +6,7 @@
     <th>Redux Fundamentals</th>
   </tr>
   <tr>
-    <th rowspan="2">Module 1</th>
+    <th rowspan="12">Module 1</th>
     <td>1.1) What is state Management</td>
   </tr>
   <tr>
