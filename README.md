@@ -268,7 +268,7 @@
     <td>8.1) What is RTK Query & what problem </td>
   </tr>
   <tr>
-    <td>8.2) Project and server setup <a hret="#">Live Demo</a> </td>
+    <td>8.2) Project and server setup <a href="#">Live Demo</a> </td>
   </tr>
   <tr>
     <td>8.3) API slice creation & store configuration </td>
@@ -299,6 +299,49 @@
   </tr>
   <tr>
     <td>8.12) <b>Project - </b> <a href="#">Advaced Todo application with RTK Query</a></td>
+  </tr>
+  <tr>
+    <th rowspan="14">Module 9</th>
+    <th>Advaced Project - Chat Application (Part - 1)</th>
+  </tr>
+  <tr>
+    <td>9.1) Proect setup <a href="#">Live Demo</a> </td>
+  </tr>
+  <tr>
+    <td>9.2) Server setup & requirement analysis</td>
+  </tr>
+  <tr>
+    <td>9.3) Create API Slice</td>
+  </tr>
+  <tr>
+    <td>9.4) Auth API and Slice </td>
+  </tr>
+  <tr>
+    <td>9.5) Registration Feature</td>
+  </tr>
+  <tr>
+    <td>9.6) Login Feature</td>
+  </tr>
+  <tr>
+    <td>9.7) Authentication Request</td>
+  </tr>
+  <tr>
+    <td>9.8) Login Persistency</td>
+  </tr>
+  <tr>
+   <td>9.9) Private Route</td>
+  </tr>
+  <tr>
+    <td>9.10) Conversation API</td>
+  </tr>
+  <tr>
+    <td>9.11) Conversation Functionality</td>
+  </tr>
+  <tr>
+    <td>9.12) Message API and Functionality</td>
+  </tr>
+  <tr>
+    <td>9.13) chat head Feature</td>
   </tr>
 </table>
 
