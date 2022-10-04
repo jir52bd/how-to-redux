@@ -260,6 +260,46 @@
   <tr>
     <td>7.10) <b>Project - </b> <a href="#">Invoice application</a></td>
   </tr>
+  <tr>
+    <th rowspan="13">Module 8</th>
+    <th>Project - Advaced Intorduction to RTK Query</th>
+  </tr>
+  <tr>
+    <td>8.1) What is RTK Query & what problem </td>
+  </tr>
+  <tr>
+    <td>8.2) Project and server setup <a hret="#">Live Demo</a> </td>
+  </tr>
+  <tr>
+    <td>8.3) API slice creation & store configuration </td>
+  </tr>
+  <tr>
+    <td>8.4) Create first Query </td>
+  </tr>
+  <tr>
+    <td>8.5) API Query - Get Single Video</td>
+  </tr>
+  <tr>
+    <td>8.6) API Query - Get Related Videos</td>
+  </tr>
+  <tr>
+    <td>8.7) Advaced configuration</td>
+  </tr>
+  <tr>
+    <td>8.8) Adding video - post request</td>
+  </tr>
+  <tr>
+    <td>8.9) Cache Behavior - Revalidation</td>
+  </tr>
+  <tr>
+    <td>8.10) Edit video and Revalidate</td>
+  </tr>
+  <tr>
+    <td>8.11) Delete and Revalidate</td>
+  </tr>
+  <tr>
+    <td>8.12) <b>Project - </b> <a href="#">Advaced Todo application with RTK Query</a></td>
+  </tr>
 </table>
 
 
