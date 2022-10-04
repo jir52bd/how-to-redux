@@ -184,7 +184,7 @@
     <td>5.10) <b>Project - </b> <a href="#">JSON Placeholder with Todo application</a></td>
   </tr>
   <tr>
-    <th rowspan="11">Module 6</th>
+    <th rowspan="14">Module 6</th>
     <th>Project - Video website with Redux Toolkit</th>
   </tr>
   <tr>
@@ -224,7 +224,7 @@
     <td>6.12) Filters and search Feature </td>
   </tr>
   <tr>
-    <td>5.10) <b>Project - </b> <a href="#">Video Course website application</a></td>
+    <td>6.13) <b>Project - </b> <a href="#">Video Course website application</a></td>
   </tr>
 </table>
 
