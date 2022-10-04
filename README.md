@@ -86,7 +86,7 @@
     <td>2.12) <b>Project - </b> <a href="#">Create Shopping Cart application</a></td>
   </tr>
   <tr>
-    <th rowspan="10">Module 3</th>
+    <th rowspan="11">Module 3</th>
     <th>Project - sample todo Application In react-redux</th>
   </tr>
   <tr>
