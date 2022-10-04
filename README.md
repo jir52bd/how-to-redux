@@ -85,6 +85,41 @@
   <tr>
     <td>2.12) <b>Project - </b> <a href="#">Create Shopping Cart application</a></td>
   </tr>
+  <tr>
+    <th></th>
+    <th>Proect - sample todo Application In react-redux</th>
+  </tr>
+  <tr>
+    <th rowspan="12">Module 3</th>
+    <td>3.1) Setup react-redux <a href="#">Live project</a></td>
+  </tr>
+  <tr>
+    <td>3.2) Defining Actions </td>
+  </tr>
+  <tr>
+    <td>3.3) Defining Reducer - todo slice </td>
+  </tr>
+  <tr>
+    <td>3.4) Defining Reducer - filter slice </td>
+  </tr>
+  <tr>
+    <td>3.5) Store Setup </td>
+  </tr>
+  <tr>
+    <td>3.6) Todo List and todo </td>
+  </tr>
+  <tr>
+    <td>3.7) Filters section   </td>
+  </tr>
+  <tr>
+    <td>3.8) Filter Todo List </td>
+  </tr>
+  <tr>
+    <td>3.9) Adding Todo </td>
+  </tr>
+  <tr>
+    <td>3.10) <b>Project - </b> <a href="#">Create Blog webpage application</a></td>
+  </tr>
 </table>
 
 
