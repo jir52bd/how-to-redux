@@ -1,6 +1,6 @@
 
 ## Table of Index
-<table>
+<table style="width:100%">
   <tr>
     <th>Module</th>
     <th>Redux Fundamentals</th>
