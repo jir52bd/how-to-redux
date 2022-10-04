@@ -344,7 +344,7 @@
     <td>9.13) chat head Feature</td>
   </tr>
   <tr>
-    <th rowspan="14">Module 10</th>
+    <th rowspan="16">Module 10</th>
     <th>Advaced Project - Chat Application (Part - 2)</th>
   </tr>
   <tr>
