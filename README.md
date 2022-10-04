@@ -92,7 +92,7 @@
     <td><a href="https://github.com/jir52bd/how-to-redux/tree/3.1">3.1</a>) Setup react-redux <a href="#">Live project</a></td>
   </tr>
   <tr>
-    <td>3.2) Defining Actions </td>
+    <td><a href="https://github.com/jir52bd/how-to-redux/tree/3.2" target="_blank">3.2</a>) Defining Actions </td>
   </tr>
   <tr>
     <td>3.3) Defining Reducer - todo slice </td>
