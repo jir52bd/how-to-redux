@@ -231,7 +231,7 @@
     <th>Project - Advaced Expense Tracker CRUD Application with Redux toolkit</th>
   </tr>
   <tr>
-    <td>7.1) Introduction and Project setup <a href="#">Live Demo</a></td>
+    <td>7.1) Introduction and Project setup <a href="https://sensational-snickerdoodle-01a2a2.netlify.app/">Live Demo</a></td>
   </tr>
   <tr>
     <td>7.2) React User Interface </td>
