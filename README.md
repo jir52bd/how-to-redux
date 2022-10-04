@@ -45,11 +45,10 @@
     <td>1.13) <b>Project - </b> <a href="#">Multicounter application</a></td>
   </tr>
   <tr>
-    <th></th>
+    <th rowspan="13">Module 2</th>
     <th>Introduction to react-redux Hook and Middlewares</th>
   </tr>
   <tr>
-    <th rowspan="12">Module 2</th>
     <td>2.1) Setup react-redux</td>
   </tr>
   <tr>
@@ -139,7 +138,7 @@
     <td>4.5) Todo Application Part - 1 <a href="#">Live Demo</a> </td>
   </tr>
   <tr>
-    <td>4.6) Todo Appliction Part - 2</td>
+    <td>4.6) Todo Application Part - 2</td>
   </tr>
   <tr>
     <td>4.7) Todo Application Part - 3   </td>
@@ -149,6 +148,40 @@
   </tr>
   <tr>
     <td>4.9) <b>Project - </b> <a href="#">Add fatures to Todo application</a></td>
+  </tr>
+  <tr>
+    <th rowspan="11">Module 5</th>
+    <th>Introduction to Redux Toolkit</th>
+  </tr>
+  <tr>
+    <td>5.1) Why Redux Tooltit</td>
+  </tr>
+  <tr>
+    <td>5.2) Creating Slice </td>
+  </tr>
+  <tr>
+    <td>5.3) Configuring Redux store & Dispatch </td>
+  </tr>
+  <tr>
+    <td>5.4) Introduction to  immer Immutable state update </td>
+  </tr>
+  <tr>
+    <td>5.5) Add new feature - Dynamic Counter</td>
+  </tr>
+  <tr>
+    <td>5.6) Middleware concept - redux-logger</td>
+  </tr>
+  <tr>
+    <td>5.7) Extra reducers</td>
+  </tr>
+  <tr>
+    <td>5.8) Async thunks part - 1 </td>
+  </tr>
+  <tr>
+    <td>5.9) Async thunks part - 2 </td>
+  </tr>
+  <tr>
+    <td>5.10) <b>Project - </b> <a href="#">JSON Placeholder with Todo application</a></td>
   </tr>
 </table>
 
