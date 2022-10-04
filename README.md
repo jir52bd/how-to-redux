@@ -426,6 +426,38 @@
   <tr>
    <td>11.10) Redux vs Contex API</td>
   </tr>
+  <tr>
+    <th rowspan="7">Module 12</th>
+    <th>Exploring Redux Documentation</th>
+  </tr>
+  <tr>
+    <td>12.1) Redux Best Practice</td>
+  </tr>
+  <tr>
+    <td>12.2) Redux Best Practice</td>
+  </tr>
+  <tr>
+    <td>12.3) Redux Best Practice</td>
+  </tr>
+  <tr>
+    <td>12.4) Redux FAQs</td>
+  </tr>
+  <tr>
+    <td>12.5) Exploring Documentation</td>
+  </tr>
+  <tr>
+    <td>12.6) Server side Rendering</td>
+  </tr>
+  <tr>
+    <th rowspan="3">Module 13</th>
+    <th>Final Projects</th>
+  </tr>
+  <tr>
+    <td>13.1) Project Manager Application</td>
+  </tr>
+  <tr>
+    <td>13.2) Blog & E-commerce Application </td>
+  </tr>
 </table>
 
 
